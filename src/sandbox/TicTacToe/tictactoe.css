@@ -1,0 +1,30 @@
+.gameview {
+  max-width: 1000px;
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.history {
+  margin-top: 30px;
+}
+
+.timeline {
+  min-width: 200px;
+}
+
+.boardrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+}
+
+.reset-buton {
+  margin-top: 30px;
+}
