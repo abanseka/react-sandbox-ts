@@ -30,12 +30,24 @@ function TicTacToe() {
   });
 
   return (
-    <div className="gameview">
-      <Board xIsNext={xIsNext} cells={currentCells} onPlay={handlePlay} />
-      <div className="history">
-        <ol> {moves} </ol>
+    <>
+      <code style={{ maxWidth: 500 }}>
+        This code defines a functional component called TicTacToe, which
+        represents a game of Tic Tac Toe. It uses React hooks, specifically
+        useState, to manage the game state. The state includes the history of
+        moves and the current move. The component renders a game board and a
+        list of moves. Each move is represented by a button that allows the user
+        to jump to that move. The handlePlay function is called when a move is
+        made, updating the history and current move state.
+      </code>
+
+      <div className="gameview">
+        <Board xIsNext={xIsNext} cells={currentCells} onPlay={handlePlay} />
+        <div className="history">
+          <ol> {moves} </ol>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

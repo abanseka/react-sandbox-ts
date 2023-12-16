@@ -10,7 +10,7 @@ const counterSlice = createSlice({
       state.value += 1;
     },
     decrement: (state: { value: number }): void => {
-      if (state.value < 0) return;
+      if (state.value <= 0) return;
       state.value -= 1;
     },
     incrementByAmount: (

@@ -1,11 +1,12 @@
 import { useState } from "react";
 import TicTacToe from "./sandbox/TicTacToe/TicTacToe";
 import Redux from "./sandbox/Redux/Redux";
+import ServerComponents from "./sandbox/serverComponents/ServerComponents";
 import "./App.css";
 
 function App() {
   const [currentSandBox, setCurrentSandBox] = useState<string>("");
-  const allSandboxes = ["home", "tictactoe", "redux"];
+  const allSandboxes = ["home", "tictactoe", "redux", "serverComponents"];
   const phImg =
     "https://i.pinimg.com/564x/e3/cd/6e/e3cd6e8ad8e3e90a8263fbe68e915777.jpg";
 
@@ -14,6 +15,7 @@ function App() {
     switch (sandbox) {
       case "tictactoe": return <TicTacToe />;
       case "redux": return <Redux />;
+      case "serverComponents": return <ServerComponents />;
       default: return <img 
         src={phImg}
         alt="home img"
