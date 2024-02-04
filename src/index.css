@@ -1,0 +1,53 @@
+:root {
+  color: black;
+  background: whitesmoke;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 1.1;
+  margin: 0;
+}
+
+button {
+  border: 3px solid transparent;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-family: inherit;
+  background-color: white;
+  cursor: pointer;
+  color: black;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  background-color: whitesmoke;
+}
+
+main {
+  height: calc(100vh - 30px);
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "one two two";
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+nav {
+  grid-area: one;
+}
+
+#sandbox {
+  grid-area: two;
+  padding: 10px;
+  overflow-y: scroll;
+}
