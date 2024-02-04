@@ -14,7 +14,7 @@ export default function Board({
     const nextCells = cells.slice();
     if (cells[cellId] || calculateWinner(cells)) return;
 
-    xIsNext ? (nextCells[cellId] = "✖") : (nextCells[cellId] = "⚫");
+    xIsNext ? (nextCells[cellId] = "➖") : (nextCells[cellId] = "🧪");
     onPlay(nextCells);
   };
 
@@ -22,7 +22,7 @@ export default function Board({
   const winner = calculateWinner(cells);
   winner
     ? (status = `Winner : ${winner}`)
-    : (status = `Next player: ${xIsNext ? "✖" : "⚫"}`);
+    : (status = `Next player: ${xIsNext ? "➖" : "🧪"}`);
 
   return (
     <div>
