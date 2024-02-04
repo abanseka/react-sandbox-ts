@@ -18,7 +18,6 @@ export default function Board({
     onPlay(nextCells);
   };
 
-
   let status;
   const winner = calculateWinner(cells);
   winner
@@ -27,7 +26,7 @@ export default function Board({
 
   return (
     <div>
-      <p>{status}</p>
+      <h2 style={{ textAlign: "center" }}>{status}</h2>
       <div className="boardrow">
         <Cell value={cells[0]} onCellClick={() => handleClick(0)} />
         <Cell value={cells[1]} onCellClick={() => handleClick(1)} />
